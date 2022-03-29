@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >= 0.7.0 < 0.9.0;
 
+// 상속2 
 contract Father{
     string public familyName = "Kim";
     string public givenName = "Jong";
@@ -26,7 +27,6 @@ contract Father{
 contract Son is Father{
 
     constructor() Father("James"){
-
     }
     
     uint256 public earning = 0;

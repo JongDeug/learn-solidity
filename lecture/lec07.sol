@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >= 0.7.0 < 0.9.0;
 
+// function4 - 4개의 저장 영역과 string
 contract lec7{
     /*
     Storage : 대부분의 변수, 함수들이 저장되며, 영속적으로 저장되어 가스 비용이 비싸다.

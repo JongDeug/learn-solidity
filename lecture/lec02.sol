@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >= 0.7.0 < 0.9.0;
 
+// data type
 contract lec2{
     //data type
         //boolean, bytes, address, uint
@@ -21,7 +22,7 @@ contract lec2{
     bool public b3 = false == true; //false
     bool public b4 = false && true; //false
 
-    // bytes 1 ~ 32
+    // bytes 1 ~ 32, 256bit까지 표현 가능
     bytes4 public bt = 0x12345678;
     bytes public bt2 = "STRING";
 

@@ -1,13 +1,14 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >= 0.7.0 < 0.9.0;
 
+// funcion 정의
 contract lec4{
 
     /*
     function 이름() public { //(public, private, internal, external) 변경가능.
         //내용
     }
-     function 이름() public return's'(타입){ 
+    function 이름() public return's'(타입){ 
         //내용
     }
     */

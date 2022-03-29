@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >= 0.7.0 < 0.9.0;
 
+// 상속3 - 두 개 이상 상속하기
 contract Father{
     uint public fatherMoney = 100;
     function getFatherName() public pure returns(string memory){

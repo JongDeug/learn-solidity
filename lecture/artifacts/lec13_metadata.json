@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "money",
+						"type": "uint256"
+					}
+				],
+				"name": "info",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "sendMoney",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lecture/lec13.sol": "lec13"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lecture/lec13.sol": {
+			"keccak256": "0x1fbb951715acb6f492e199c88e646442da37fcb6ba2b5442757f74027a1ff444",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://33afb58f20563df40348555dab3855ad51f2b5e84c6b8d804e7c5263c1d118d1",
+				"dweb:/ipfs/QmQmGAHWFtThe7xQNjxBPdVdAa7tQCYtZNdnztyX342rTC"
+			]
+		}
+	},
+	"version": 1
+}

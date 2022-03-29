@@ -1,73 +1,41 @@
 {
 	"compiler": {
-		"version": "0.8.13+commit.abaa5c0e"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "fatherMoney",
-				"outputs": [
+				"anonymous": false,
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getFatherName",
-				"outputs": [
-					{
+						"indexed": false,
 						"internalType": "string",
-						"name": "",
+						"name": "name",
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
+				"name": "FatherName",
+				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "getMoney",
-				"outputs": [
+				"anonymous": false,
+				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getMotherName",
-				"outputs": [
-					{
+						"indexed": false,
 						"internalType": "string",
-						"name": "",
+						"name": "name",
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
-				"type": "function"
+				"name": "MotherName",
+				"type": "event"
 			},
 			{
 				"inputs": [],
-				"name": "motherMoney",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"name": "who",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -84,7 +52,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lecture/lec12.sol": "Son"
+			"lecture/lec16.sol": "Son"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -98,12 +66,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"lecture/lec12.sol": {
-			"keccak256": "0x51b31b1553ecafd8ce5dacaa1be7c83caddc1b9ec2e78dcf5097cab181fbd8ff",
+		"lecture/lec16.sol": {
+			"keccak256": "0x5575cdaf47ed94e603507318cd02113c874f0f6e43012d4ca564cee0044c72fd",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://49f9bb76bd4f051694c745ce1dc422e15ac9b027e89d8dc603fca609751bfe6e",
-				"dweb:/ipfs/QmRHzYUf44NcBfsn2KQBbmQmNPF2ywTZKt6MfjE24ytxT2"
+				"bzz-raw://d25616ca38720ceb0ee30fc130387c23bee1f1daf98f8b1cb29a266a47f90064",
+				"dweb:/ipfs/QmQ5vyRw61Gr1XEzVPBUxVhJMaFofie27Av77DvjPm3HFq"
 			]
 		}
 	},

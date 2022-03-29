@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >= 0.7.0 < 0.9.0;
 
+// function2 - public, external, private, internal
 contract lec5{
-
     /*
     function 이름() public { //(public, private, internal, external) 변경가능.
         //내용

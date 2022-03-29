@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.13+commit.abaa5c0e"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -164,11 +164,11 @@
 	},
 	"sources": {
 		"lecture/lec02.sol": {
-			"keccak256": "0x959f24f465fbeb3c79d2b3418d723c6ce2fd574409d55078eaf8281bb6ce660f",
+			"keccak256": "0x906e88841d3b298c7058596a508d553883b321ae6cf126f7d51d4a18a9662deb",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://10b872a559ecc51b961bd0cfa293ed024a91b063d089cbad0454323f79e85902",
-				"dweb:/ipfs/QmNcoA6FWiff1Xi6rdkWiH7ZPTEPgByBWgRimdnJ1XNpWU"
+				"bzz-raw://68868cab39eaf7eef436c2629de25d5bbda436084c1c6fcc5707b68203539b0f",
+				"dweb:/ipfs/QmQk9psKNVPVtFzCMbxvLkHKiUmwMM9Yj6sSoyMhiXPfvc"
 			]
 		}
 	},
