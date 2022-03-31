@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					}
+				],
+				"name": "isIt",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lecture/lec21.sol": "lec21"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lecture/lec21.sol": {
+			"keccak256": "0xc14789ecd0a3dd3bc8b256d958e41f888facaa9230c656abbced014470db5657",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://e765638580b677d24f9288280a0582a4298d0f6466defec7d75d481a2ccc3ba8",
+				"dweb:/ipfs/Qmdfbqq3LCFLQuRp9cjuo4d1jqEpF4TDCjBrmdwDX3M5Di"
+			]
+		}
+	},
+	"version": 1
+}
