@@ -1,0 +1,89 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					}
+				],
+				"name": "CountryIndexName",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_search",
+						"type": "string"
+					}
+				],
+				"name": "linearSearch",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"lec24.sol": "lec24"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"lec24.sol": {
+			"keccak256": "0x8cc15ad0774c9cad640bf09eb4b46555f44e1fda6b311cc852a4095af51df929",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://fbba91ef8d09efabbfc3e8dc6c84053e9b526cb084e6a0af7ebbd3c83ffa1135",
+				"dweb:/ipfs/QmTyQsZs1MpjPguC84eh2s8qxN78skE2TTPCXzrWjCc8M4"
+			]
+		}
+	},
+	"version": 1
+}
