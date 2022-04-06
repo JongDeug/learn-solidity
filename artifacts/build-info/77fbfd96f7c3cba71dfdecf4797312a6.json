@@ -1,0 +1,707 @@
+{
+	"id": "77fbfd96f7c3cba71dfdecf4797312a6",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.7.4",
+	"solcLongVersion": "0.7.4+commit.3f05b770",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"lec25.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >= 0.7.0 < 0.9.0;\r\n\r\n// 에러핸들러 : require, revert, assert, try/catch\r\n\r\ncontract lec25{\r\n    /*\r\n    0.4.22 ~ 0.7.x\r\n    assert : gas를 다 소비한 후, 특정한 조건에 부합하지 않으면 (false일 때) 에러를 발생시킨다.\r\n    revert : 조건 없이 에러를 발생시키고, gas를 환불 시켜준다.\r\n    require : 특정한 조건에 부합하지 않으면 (false일 때) 에러를 발생시키고, gas를 환불 시켜준다.\r\n    */\r\n\r\n    function assertNow() public pure{\r\n        assert(false); //에러 발생. gas 환불 안됨.\r\n    }\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"lec25.sol": {
+				"lec25": {
+					"abi": [
+						{
+							"inputs": [],
+							"name": "assertNow",
+							"outputs": [],
+							"stateMutability": "pure",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"lec25.sol\":133:631  contract lec25{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"lec25.sol\":133:631  contract lec25{\r... */\n      mstore(0x40, 0x80)\n      callvalue\n      dup1\n      iszero\n      tag_1\n      jumpi\n      0x00\n      dup1\n      revert\n    tag_1:\n      pop\n      jumpi(tag_2, lt(calldatasize, 0x04))\n      shr(0xe0, calldataload(0x00))\n      dup1\n      0x2712f519\n      eq\n      tag_3\n      jumpi\n    tag_2:\n      0x00\n      dup1\n      revert\n        /* \"lec25.sol\":528:628  function assertNow() public pure{\r... */\n    tag_3:\n      tag_4\n      tag_5\n      jump\t// in\n    tag_4:\n      stop\n    tag_5:\n        /* \"lec25.sol\":578:583  false */\n      0x00\n        /* \"lec25.sol\":571:584  assert(false) */\n      tag_7\n      jumpi\n      invalid\n    tag_7:\n        /* \"lec25.sol\":528:628  function assertNow() public pure{\r... */\n      jump\t// out\n\n    auxdata: 0xa26469706673582212205c8ccf7affcce4328a49e20e91c907048911d36b236c3006d97c07b13d5a4bc564736f6c63430007040033\n}\n",
+						"bytecode": {
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b5060748061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80632712f51914602d575b600080fd5b60336035565b005b6000603c57fe5b56fea26469706673582212205c8ccf7affcce4328a49e20e91c907048911d36b236c3006d97c07b13d5a4bc564736f6c63430007040033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x74 DUP1 PUSH2 0x1E PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x2712F519 EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x33 PUSH1 0x35 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 PUSH1 0x3C JUMPI INVALID JUMPDEST JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x5C DUP13 0xCF PUSH27 0xFFCCE4328A49E20E91C907048911D36B236C3006D97C07B13D5A4B 0xC5 PUSH5 0x736F6C6343 STOP SMOD DIV STOP CALLER ",
+							"sourceMap": "133:498:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b506004361060285760003560e01c80632712f51914602d575b600080fd5b60336035565b005b6000603c57fe5b56fea26469706673582212205c8ccf7affcce4328a49e20e91c907048911d36b236c3006d97c07b13d5a4bc564736f6c63430007040033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0x2712F519 EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x33 PUSH1 0x35 JUMP JUMPDEST STOP JUMPDEST PUSH1 0x0 PUSH1 0x3C JUMPI INVALID JUMPDEST JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x5C DUP13 0xCF PUSH27 0xFFCCE4328A49E20E91C907048911D36B236C3006D97C07B13D5A4B 0xC5 PUSH5 0x736F6C6343 STOP SMOD DIV STOP CALLER ",
+							"sourceMap": "133:498:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;528:100;;;:::i;:::-;;;578:5;571:13;;;;528:100::o"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "23200",
+								"executionCost": "75",
+								"totalCost": "23275"
+							},
+							"external": {
+								"assertNow()": "129"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 133,
+									"end": 631,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212205c8ccf7affcce4328a49e20e91c907048911d36b236c3006d97c07b13d5a4bc564736f6c63430007040033",
+									".code": [
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "CALLVALUE",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "ISZERO",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "1"
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "JUMPI",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "REVERT",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "tag",
+											"source": 0,
+											"value": "1"
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "POP",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "PUSH",
+											"source": 0,
+											"value": "4"
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "CALLDATASIZE",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "LT",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "2"
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "JUMPI",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "CALLDATALOAD",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "PUSH",
+											"source": 0,
+											"value": "E0"
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "SHR",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "PUSH",
+											"source": 0,
+											"value": "2712F519"
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "EQ",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "3"
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "JUMPI",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "tag",
+											"source": 0,
+											"value": "2"
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 133,
+											"end": 631,
+											"name": "REVERT",
+											"source": 0
+										},
+										{
+											"begin": 528,
+											"end": 628,
+											"name": "tag",
+											"source": 0,
+											"value": "3"
+										},
+										{
+											"begin": 528,
+											"end": 628,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 528,
+											"end": 628,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "4"
+										},
+										{
+											"begin": 528,
+											"end": 628,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "5"
+										},
+										{
+											"begin": 528,
+											"end": 628,
+											"name": "JUMP",
+											"source": 0,
+											"value": "[in]"
+										},
+										{
+											"begin": 528,
+											"end": 628,
+											"name": "tag",
+											"source": 0,
+											"value": "4"
+										},
+										{
+											"begin": 528,
+											"end": 628,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 528,
+											"end": 628,
+											"name": "STOP",
+											"source": 0
+										},
+										{
+											"begin": 528,
+											"end": 628,
+											"name": "tag",
+											"source": 0,
+											"value": "5"
+										},
+										{
+											"begin": 528,
+											"end": 628,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 578,
+											"end": 583,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 571,
+											"end": 584,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "7"
+										},
+										{
+											"begin": 571,
+											"end": 584,
+											"name": "JUMPI",
+											"source": 0
+										},
+										{
+											"begin": 571,
+											"end": 584,
+											"name": "INVALID",
+											"source": 0
+										},
+										{
+											"begin": 571,
+											"end": 584,
+											"name": "tag",
+											"source": 0,
+											"value": "7"
+										},
+										{
+											"begin": 571,
+											"end": 584,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 528,
+											"end": 628,
+											"name": "JUMP",
+											"source": 0,
+											"value": "[out]"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {
+							"assertNow()": "2712f519"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.7.4+commit.3f05b770\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"assertNow\",\"outputs\":[],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lec25.sol\":\"lec25\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"lec25.sol\":{\"keccak256\":\"0xb32e9783b24e4cc96169d5540825074a791893ae01a0ef101cfc62efdfe21e31\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://443b1c4eb00d661a233b6b138fa917c1297038c524b5c45a145b041293d1678d\",\"dweb:/ipfs/QmUiSpZrvzX8GJmCGVyxP2dAhyCAkYrcUL2zXt9oSyzmCk\"]}},\"version\":1}",
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"lec25.sol": {
+				"ast": {
+					"absolutePath": "lec25.sol",
+					"exportedSymbols": {
+						"lec25": [
+							10
+						]
+					},
+					"id": 11,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "37:33:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 10,
+							"linearizedBaseContracts": [
+								10
+							],
+							"name": "lec25",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"body": {
+										"id": 8,
+										"nodeType": "Block",
+										"src": "560:68:0",
+										"statements": [
+											{
+												"expression": {
+													"arguments": [
+														{
+															"hexValue": "66616c7365",
+															"id": 5,
+															"isConstant": false,
+															"isLValue": false,
+															"isPure": true,
+															"kind": "bool",
+															"lValueRequested": false,
+															"nodeType": "Literal",
+															"src": "578:5:0",
+															"typeDescriptions": {
+																"typeIdentifier": "t_bool",
+																"typeString": "bool"
+															},
+															"value": "false"
+														}
+													],
+													"expression": {
+														"argumentTypes": [
+															{
+																"typeIdentifier": "t_bool",
+																"typeString": "bool"
+															}
+														],
+														"id": 4,
+														"name": "assert",
+														"nodeType": "Identifier",
+														"overloadedDeclarations": [],
+														"referencedDeclaration": -3,
+														"src": "571:6:0",
+														"typeDescriptions": {
+															"typeIdentifier": "t_function_assert_pure$_t_bool_$returns$__$",
+															"typeString": "function (bool) pure"
+														}
+													},
+													"id": 6,
+													"isConstant": false,
+													"isLValue": false,
+													"isPure": false,
+													"kind": "functionCall",
+													"lValueRequested": false,
+													"names": [],
+													"nodeType": "FunctionCall",
+													"src": "571:13:0",
+													"tryCall": false,
+													"typeDescriptions": {
+														"typeIdentifier": "t_tuple$__$",
+														"typeString": "tuple()"
+													}
+												},
+												"id": 7,
+												"nodeType": "ExpressionStatement",
+												"src": "571:13:0"
+											}
+										]
+									},
+									"functionSelector": "2712f519",
+									"id": 9,
+									"implemented": true,
+									"kind": "function",
+									"modifiers": [],
+									"name": "assertNow",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 2,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "546:2:0"
+									},
+									"returnParameters": {
+										"id": 3,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "560:0:0"
+									},
+									"scope": 10,
+									"src": "528:100:0",
+									"stateMutability": "pure",
+									"virtual": false,
+									"visibility": "public"
+								}
+							],
+							"scope": 11,
+							"src": "133:498:0"
+						}
+					],
+					"src": "37:594:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

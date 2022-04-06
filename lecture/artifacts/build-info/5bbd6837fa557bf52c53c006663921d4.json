@@ -1,0 +1,318 @@
+{
+	"id": "5bbd6837fa557bf52c53c006663921d4",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.7.0",
+	"solcLongVersion": "0.7.0+commit.9e61f92b",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"lecture/lec26.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >= 0.7.0 < 0.9.0;\r\n\r\n\r\n// 에러핸들러 : requrie, revert, assert, try/catch\r\n\r\ncontract lec26{\r\n\r\n    /*\r\n    0.8.0  포함x\r\n    0.8.1~\r\n    assert: 오직 내부적 에러 테스트 용도, 불변성 체크 용도.\r\n            assert가 에러를 발생시키면, Panic(uint256) 이라는 에러타입의 에러 발생\r\n    */\r\n\r\n    \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"lecture/lec26.sol": {
+				"lec26": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"lecture/lec26.sol\":135:396  contract lec26{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"lecture/lec26.sol\":135:396  contract lec26{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220fa4e854ecd1a9f7d0ec69b402aed5561250567b1d777543c295ff5eb1ba2916f64736f6c63430007000033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220fa4e854ecd1a9f7d0ec69b402aed5561250567b1d777543c295ff5eb1ba2916f64736f6c63430007000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 STATICCALL 0x4E DUP6 0x4E 0xCD BYTE SWAP16 PUSH30 0xEC69B402AED5561250567B1D777543C295FF5EB1BA2916F64736F6C6343 STOP SMOD STOP STOP CALLER ",
+							"sourceMap": "135:261:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220fa4e854ecd1a9f7d0ec69b402aed5561250567b1d777543c295ff5eb1ba2916f64736f6c63430007000033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 STATICCALL 0x4E DUP6 0x4E 0xCD BYTE SWAP16 PUSH30 0xEC69B402AED5561250567B1D777543C295FF5EB1BA2916F64736F6C6343 STOP SMOD STOP STOP CALLER ",
+							"sourceMap": "135:261:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 135,
+									"end": 396,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220fa4e854ecd1a9f7d0ec69b402aed5561250567b1d777543c295ff5eb1ba2916f64736f6c63430007000033",
+									".code": [
+										{
+											"begin": 135,
+											"end": 396,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 135,
+											"end": 396,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 135,
+											"end": 396,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 135,
+											"end": 396,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 135,
+											"end": 396,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 135,
+											"end": 396,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.7.0+commit.9e61f92b\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lecture/lec26.sol\":\"lec26\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"lecture/lec26.sol\":{\"keccak256\":\"0xf82e0d67f8261970eef6233e261adcd7e2fec76cb258d611c8f0f10f8c103e64\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://74b892a2bbd285d8a26b2da4f77dfd8793cf8361a88e7f78d6c509542aed30c4\",\"dweb:/ipfs/QmP8pjHDYXLNg6SDUge4ENKjpsh4jgsZp1UpHbuNeRm4bQ\"]}},\"version\":1}",
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"lecture/lec26.sol": {
+				"ast": {
+					"absolutePath": "lecture/lec26.sol",
+					"exportedSymbols": {
+						"lec26": [
+							2
+						]
+					},
+					"id": 3,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "37:33:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "lec26",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "135:261:0"
+						}
+					],
+					"src": "37:359:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
