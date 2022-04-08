@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lecture/lec27.sol": "lec27"
+			"lecture/lec31.sol": "lec31"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -32,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"lecture/lec27.sol": {
-			"keccak256": "0xa0b63d13672b7a8db2147d624814687a768c79c3c6a1856f3bd2fcc02585fe39",
+		"lecture/lec31.sol": {
+			"keccak256": "0xa37ac437b1d6d46a924e33a6c6eec00be14eb6af3ee5d71da0844b611b57bc04",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://5b0052fec16c25884b01e44c123d8a4bae82c7fd378448e517a2bf93b45cbed6",
-				"dweb:/ipfs/QmV24Cto5VNLKkzYKBGhfTHho4d6EHeR6jqtbkyyb9oY7p"
+				"bzz-raw://37646ee4ff30eaffee14e32571772e87d0c96a628c474583e8b84eeb7d648dae",
+				"dweb:/ipfs/QmRzy2umabnZMCv7ZTdjQU11ZMF1o8vsNsKh5RotYK8jbs"
 			]
 		}
 	},

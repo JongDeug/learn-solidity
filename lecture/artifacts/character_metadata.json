@@ -8,26 +8,18 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "_num1",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_num2",
+						"name": "_power",
 						"type": "uint256"
 					}
 				],
-				"name": "division",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
+				"stateMutability": "nonpayable",
+				"type": "constructor"
 			}
 		],
 		"devdoc": {
@@ -43,7 +35,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lecture/lec27.sol": "math"
+			"lecture/lec28.sol": "character"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -57,12 +49,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"lecture/lec27.sol": {
-			"keccak256": "0xa0b63d13672b7a8db2147d624814687a768c79c3c6a1856f3bd2fcc02585fe39",
+		"lecture/lec28.sol": {
+			"keccak256": "0x6bcf5bfb5d10db9a20a319ad92491ae7a4ca7834529ad5d949b9a2a592720619",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://5b0052fec16c25884b01e44c123d8a4bae82c7fd378448e517a2bf93b45cbed6",
-				"dweb:/ipfs/QmV24Cto5VNLKkzYKBGhfTHho4d6EHeR6jqtbkyyb9oY7p"
+				"bzz-raw://28e849f844be6d5ffeaed9706c9f93af5e48e1e8c714320051ca7da1b8fca172",
+				"dweb:/ipfs/QmRTpPEj9YHtCNKK3WNSkdfCJwnRu31Bhf7eWxioaC6h1G"
 			]
 		}
 	},

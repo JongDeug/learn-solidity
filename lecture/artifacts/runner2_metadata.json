@@ -25,27 +25,34 @@
 				"type": "event"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_power",
-						"type": "uint256"
-					}
-				],
+				"inputs": [],
 				"name": "playTryCatch",
 				"outputs": [
 					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
 						"internalType": "bool",
-						"name": "successOrFail",
+						"name": "",
 						"type": "bool"
 					}
 				],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "simple",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -62,7 +69,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"lecture/lec28.sol": "runner"
+			"lecture/lec28.sol": "runner2"
 		},
 		"evmVersion": "london",
 		"libraries": {},

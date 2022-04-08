@@ -1,0 +1,70 @@
+{
+	"id": "85c3d92c26dc7b5a72a3a71ef667d187",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"lecture/lec28.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >= 0.7.0 < 0.9.0;\r\n\r\n// try/catch\r\n\r\n// 외부 스마트 컨트랙을 생성할 때\r\n// 스마트 컨트랙 내에서 함수를 부를 때"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"lecture/lec28.sol": {
+				"ast": {
+					"absolutePath": "lecture/lec28.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "37:33:0"
+						}
+					],
+					"src": "37:154:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

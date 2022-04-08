@@ -75,5 +75,6 @@ contract runner{
             emit catchLowLevelErr("LowLevelError", _errorCode);
             return(0,false);
         }
+        // 각각의 에러를 잡지 않을 때는 그냥 lec28과 같이 catch만 써주면 됨.
     }
 }

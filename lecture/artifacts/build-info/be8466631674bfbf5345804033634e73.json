@@ -1,0 +1,70 @@
+{
+	"id": "be8466631674bfbf5345804033634e73",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"lecture/lec31.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >= 0.7.0 < 0.9.0;\r\n\r\n/*\r\nSPDX-License-Identifier 목적\r\n1. 라이센서를 명시해줌으로써 스마트 컨트랙에 대한 신뢰감을 높일 수 있음.\r\n2. 스마트 컨트랙 소스코드가 워낙 오픈되어 있으니, 저작권 같은 관련된 문제를 해소\r\n\r\n주석\r\n1. 블록단위 : 보통 블록단위의 주석은 스마트 컨트랙, 함수 등 많은 양의 설명\r\n2. 행단위 : 행단위는 변수 바로 옆에 쓰여서, 짤막 짤막한 설명\r\n*/"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"lecture/lec31.sol": {
+				"ast": {
+					"absolutePath": "lecture/lec31.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "37:33:0"
+						}
+					],
+					"src": "37:494:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

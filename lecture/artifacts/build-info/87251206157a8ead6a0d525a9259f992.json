@@ -1,0 +1,323 @@
+{
+	"id": "87251206157a8ead6a0d525a9259f992",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"lecture/lec31.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >= 0.7.0 < 0.9.0;\r\n\r\n/*\r\nSPDX-License-Identifier 목적\r\n1. 라이센서를 명시해줌으로써 스마트 컨트랙에 대한 신뢰감을 높일 수 있음.\r\n2. 스마트 컨트랙 소스코드가 워낙 오픈되어 있으니, 저작권 같은 관련된 문제를 해소\r\n\r\n주석\r\n1. 블록단위 : 보통 블록단위의 주석은 스마트 컨트랙, 함수 등 많은 양의 설명\r\n2. 행단위 : 행단위는 변수 바로 옆에 쓰여서, 짤막 짤막한 설명\r\n*/\r\n\r\ncontract lec31{\r\n    //\r\n    /**/\r\n    // 주석 comment 쓸 줄 알제~~?~\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"lecture/lec31.sol": {
+				"lec31": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"lecture/lec31.sol\":535:613  contract lec31{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"lecture/lec31.sol\":535:613  contract lec31{\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa26469706673582212206d491bcd182218fe78bac6d52e02405f1ec025f32c3144aab6565c165bef967164736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212206d491bcd182218fe78bac6d52e02405f1ec025f32c3144aab6565c165bef967164736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH14 0x491BCD182218FE78BAC6D52E0240 0x5F 0x1E 0xC0 0x25 RETURN 0x2C BALANCE DIFFICULTY 0xAA 0xB6 JUMP 0x5C AND JUMPDEST 0xEF SWAP7 PUSH18 0x64736F6C6343000807003300000000000000 ",
+							"sourceMap": "535:78:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212206d491bcd182218fe78bac6d52e02405f1ec025f32c3144aab6565c165bef967164736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH14 0x491BCD182218FE78BAC6D52E0240 0x5F 0x1E 0xC0 0x25 RETURN 0x2C BALANCE DIFFICULTY 0xAA 0xB6 JUMP 0x5C AND JUMPDEST 0xEF SWAP7 PUSH18 0x64736F6C6343000807003300000000000000 ",
+							"sourceMap": "535:78:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 535,
+									"end": 613,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212206d491bcd182218fe78bac6d52e02405f1ec025f32c3144aab6565c165bef967164736f6c63430008070033",
+									".code": [
+										{
+											"begin": 535,
+											"end": 613,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 535,
+											"end": 613,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 535,
+											"end": 613,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 535,
+											"end": 613,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 535,
+											"end": 613,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 535,
+											"end": 613,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lecture/lec31.sol\":\"lec31\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"lecture/lec31.sol\":{\"keccak256\":\"0xa37ac437b1d6d46a924e33a6c6eec00be14eb6af3ee5d71da0844b611b57bc04\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://37646ee4ff30eaffee14e32571772e87d0c96a628c474583e8b84eeb7d648dae\",\"dweb:/ipfs/QmRzy2umabnZMCv7ZTdjQU11ZMF1o8vsNsKh5RotYK8jbs\"]}},\"version\":1}",
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"sources": {
+			"lecture/lec31.sol": {
+				"ast": {
+					"absolutePath": "lecture/lec31.sol",
+					"exportedSymbols": {
+						"lec31": [
+							2
+						]
+					},
+					"id": 3,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "37:33:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "lec31",
+							"nameLocation": "544:5:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "535:78:0",
+							"usedErrors": []
+						}
+					],
+					"src": "37:576:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
